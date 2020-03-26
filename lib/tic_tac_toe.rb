@@ -16,7 +16,7 @@ class TicTacToe
     end
 
     def play
-        turn(@board) until over?(@board)
+        turn until over?
         if self.won?
             puts "Congratulations #{self.winner}!"
         elsif self.draw?
